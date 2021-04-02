@@ -7,10 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     container: ghcr.io/toltec-dev/toolchain
     steps:
+      - uses: actions/checkout@v2
       - uses: actions-rs/toolchain@v1
         with:
           toolchain: stable
-      - run: ls
       - uses: actions-rs/cargo@v1
         with:
           command: build
