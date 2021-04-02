@@ -10,4 +10,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions-rs/cargo@v1
-      - run: cargo build
+        with:
+          command: build
+          args: --target armv7-unknown-linux-gnueabihf
