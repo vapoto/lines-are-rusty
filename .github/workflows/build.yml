@@ -5,7 +5,7 @@ on: [push, pull_request]
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: ghcr.io/toltec-dev/rust
+    container: ghcr.io/toltec-dev/toolchain
     steps:
       - uses: actions-rs/toolchain@v1
         with:
