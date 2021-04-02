@@ -9,4 +9,4 @@ jobs:
       image: ghcr.io/toltec-dev/rust
     steps:
       - uses: actions/checkout@v2
-      - run: ls
+      - run: cargo build
