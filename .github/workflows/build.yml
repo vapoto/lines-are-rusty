@@ -11,6 +11,8 @@ jobs:
       - uses: actions-rs/toolchain@v1
         with:
           toolchain: stable
+          profile: minimal
+          target: armv7-unknown-linux-gnueabihf
       - uses: actions-rs/cargo@v1
         with:
           command: build
